@@ -20,7 +20,7 @@ int get_max(int a, int b)
 	if(a>b) return a;
 	
 	
-	else return b;
+	return b;
 }
 
 int main()
@@ -33,6 +33,8 @@ int main()
  
  output= sumTwo(x,y);
  printf("sumtwo : %d\n", output);
+ printf("square : %d\n", square(x));
+ printf("get_max : %d\n", get_max(x,y));
  
 }
 
