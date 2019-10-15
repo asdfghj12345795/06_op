@@ -1,17 +1,15 @@
-#include<stdio.h>
-int square(int n);
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main(void)
 {
-	int result;
-	result = square(5);
-	printf("%d", result);
+	int i;
+	int max=45;
 	
+	srand((unsigned)time(NULL));
+	for(i=0;i<6;i++)
+		printf("%d ", 1+rand()%max) ;
+	
+	return 0;
 }
-
-int square (int n)
-{
-	return n*n;
-}
-
-
