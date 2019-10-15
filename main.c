@@ -1,15 +1,17 @@
 #include<stdio.h>
+int square(int n);
 
-void square (int a)
+int main(void)
 {
-	a=a*a;
+	int result;
+	result = square(5);
+	printf("%d", result);
+	
 }
 
-int main()
+int square (int n)
 {
-	int a =2;
-	square(a);
-	printf("a=%d\n", a);
+	return n*n;
 }
 
 
